@@ -1,0 +1,73 @@
+#               ac      x    y    rd    ag   c  m     r     t # label
+b       0, 100.,  1.0, ag=-90.
+
+
+c    t, -4.00, 0., 4.,   0., 0., 1, .005, .995 # BS @-5, 5
+ +   t, rd=4., ag= 90., r=.005, t=.995
+ +   t, rd=4., ag=180., r=.005, t=.995
+ +   t, rd=4., ag=270., r=.005, t=.995
+c  srt, 0.00, 0., 5.65,  45., 0., 1, .995, .000 # PBS2
+
+d  t, 20.,  0.00, 10.00, f=100.     # lens @ -5,5
+ + t,  dm=0., c=0.
+
+c stth, 50, 0, 10.,  0., 0., 1, .5, .5 # \bf CBD  @-5,13
+
+d tth, 55., 0, 10.,  10., 0., 2, .5, .5 # extraordinary beam (prism tilted) refractive index: 2
+ + tth,  dx=41
+ 
+d hht, 55., 0, 10.,  0., 0., 3, .5, .5 # ordinary beam (prism untilted), refractive index: 3
+ + hht,  dx=41
+ 
+c  r, 145.,  0.00, 10.00, ag=0.     # SAMPLE @-5,15
+
+d t, -25, 0, 10.,  0., 0., 1, 0., 1 # Wavelength filters @-20, -15
+ + t, dx=1
+ 
+ d t, -35, 0, 10.,  0., 0., 1, 0., 1 # Wavelength filter
+ + t, dx=1
+
+c    t, -54.00, 0., 4.,   0., 0., 1, .005, .995 # BS @0, -15
+ +   t, rd=4., ag= 90., r=.005, t=.995
+ +   t, rd=4., ag=180., r=.005, t=.995
+ +   t, rd=4., ag=270., r=.005, t=.995
+c  srt, -50.00, 0., 5.65,  45., 0., 1, .995, .000 # PBS2
+ 
+d t, -70., 0, 10.,  0., 0., 1, 0., 1 # lambda/4 @-10, -15
+ + t, dx=1 
+ 
+
+d  t, -65.,  0.00, 10.00, f=100.     # lens @ -5,15
+ + t,  dm=0., c=0. 
+
+ 
+c stth, -95, 0, 10.,  180., 0., 1, .5, .5 # \bf CBD  @-5,13
+
+d th, -100., 0, 10.,  180., 0., 2, .5, .5 # extraordinary beam (prism tilted) refractive index: 2
+ + th,  dx=41
+ 
+d ht, -100., 0, 10.,  190., 0., 3, .5, .5 # ordinary beam (prism untilted), refractive index: 3
+ + ht,  dx=41
+ 
+c  d, -50., 120., 10.00, ag=90.     # PD3, PD4 @-10,5
+ 
+d  t, -50.,  10., 10.00, ag=90, f=100.     # lens @ 10,5
+ + t,  dm=0., c=0. 
+ 
+c stth, -50, 45, 10,  90., 0., 1, .5, .5 # \bf CBD  @10,0
+
+d th, -50., 50, 10.,  90., 0., 2, .5, .5 # extraordinary beam (prism tilted) refractive index: 2
+ + th,  dx=41
+ 
+d ht, -50., 50, 10.,  100., 0., 3, .5, .5 # ordinary beam (prism untilted), refractive index: 3
+ + ht,  dx=41
+ 
+c  d, -160.,  0.00, 10.00, ag=0.     # PD1, PD2 @-10,15
+ 
+ 
+#c    t, -74.00, -25, 4.,   0., 0., 1, .005, .995 # PBS-cube
+# +   t, rd=4., ag= 90., r=.005, t=.995
+# +   t, rd=4., ag=180., r=.005, t=.995
+# +   t, rd=4., ag=270., r=.005, t=.995
+# c  srt, -70, -25, 5.65,  40., 0., 1, 1., .000 # PBS2
+
